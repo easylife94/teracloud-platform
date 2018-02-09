@@ -1,6 +1,6 @@
 package com.teracloud.platform.service;
 
-import com.teracloud.platform.service.rpc.hystric.MonitorServiceHystricImpl;
+import com.teracloud.platform.service.hystric.MonitorServiceHystricImpl;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
