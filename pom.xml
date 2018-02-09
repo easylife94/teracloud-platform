@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.10.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Edgware.SR1</spring-cloud.version>
+    </properties>
+
+
+    <groupId>com.teracloud</groupId>
+    <artifactId>platform</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>platform-dao</module>
+        <module>platform-open</module>
+        <!-- service module -->
+        <module>platform-service-monitor</module>
+        <module>platform-service-monitor-interface</module>
+        <module>platform-service-remote</module>
+        <module>platform-service-remote-interface</module>
+        <!-- distribut service starter -->
+        <module>platform-service-center-starter</module>
+        <module>platform-service-monitor-starter</module>
+        <module>platform-service-remote-starter</module>
+        <!-- standalone project-->
+        <module>platform-standalone</module>
+        <module>platform-service-mq</module>
+        <module>platform-service-mq-interface</module>
+        <module>platform-service-mq-starter</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

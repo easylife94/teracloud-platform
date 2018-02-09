@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-monitor
+  cloud:
+    config:
+      name: platform
+      label: master
+      profile: dev
+      uri: http://localhost:8888/

@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/easylife94/spring-cloud-config/
+          searchPaths: teracloud-platform
